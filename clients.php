@@ -76,8 +76,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['ajouter'])) {
                     <td><?= htmlspecialchars($client['email']); ?></td>
                     <td><?= htmlspecialchars($client['telephone']); ?></td>
                     <td>
-                        <a href="edit_client.php?id=<?= $client['id']; ?>" class="btn btn-primary">Modifier</a>
-                        <a href="delete_client.php?id=<?= $client['id']; ?>" class="btn btn-danger">Supprimer</a>
+                        <a href="edit.php?id=<?= $client['id']; ?>" class="btn btn-primary">Modifier</a>
+                        <a href="delete.php?id=<?= $client['id']; ?>" class="btn btn-danger">Supprimer</a>
                     </td>
                 </tr>
             <?php endforeach; ?>
